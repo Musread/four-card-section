@@ -1,0 +1,58 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 3rem;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  &__description {
+    font-weight: 200;
+    color: var(--grayish-blue);
+    text-align: center;
+    // width: 50%;
+  }
+}
+
+.header-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &--main {
+    font-weight: 200;
+  }
+
+  &--sub {
+    font-weight: 400;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 4rem;
+
+  @include respond {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem;
+  }
+}

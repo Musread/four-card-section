@@ -1,0 +1,7 @@
+.u-width {
+  width: 40%;
+
+  @include respond {
+    width: 75%;
+  }
+}
